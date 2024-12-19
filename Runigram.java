@@ -217,7 +217,7 @@ public class Runigram {
 	public static void morph(Color[][] source, Color[][] target, int n) {
 		int height = source.length;
 		int width = source[0].length;
-		if(target.length != width || target[0].length != height){
+		if(target.length != height || target[0].length != width){
 			target = scaled(target, width, height);
 		}
 		for(int i = 0; i <= n; i++){
